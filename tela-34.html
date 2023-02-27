@@ -1,0 +1,136 @@
+<style>
+    .jan {
+        z-index: 30;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .8);
+    }
+</style>
+<div style="height: 60px;width: 100%;">
+    <img style="height: 60px;position: absolute;right: 0px;" src="recursos/imgs/H1.png">
+    <p style="position: absolute;color: white;margin-left: 42px;margin-top: 26px;font-size: 12px;">TÓPICO<strong>
+            2</strong></p>
+    <p style="position: absolute;color: white;margin-left: 112px;margin-top: 26px;font-size: 11px;">
+        ESTRATÉGIAS DE AVALIAÇÃO NO CONTEXTO DA APS</p>
+</div>
+<div style="margin-top: 59px;margin-left: 84px;width: 721px;">
+    <p>A segunda tipologia está relacionada à função ou ao papel da avaliação, e inclui três tipos de avaliação,
+        segundo
+        Jannuzzi (2016). </p>
+    <p style="margin-top: 50px;">Clique sobre os tipos para conhecê-los.</p>
+    <div style="margin-top: 70px;display: flex;justify-content: space-between;">
+        <div id="botao_1"
+            style="width: 194px;height: 75px;background: #E9A527 0% 0% no-repeat padding-box;   border-radius: 10px; box-shadow: rgba(112, 112, 112, 0.46) 5px 4px; display: flex; align-items: center; justify-content: space-around; cursor: pointer;">
+            <p style="color: white;">Avaliação formativa</p>
+        </div>
+        <div id="botao_2"
+            style="width: 194px;height: 75px;background: #3F6B71 0% 0% no-repeat padding-box;   border-radius: 10px; box-shadow: rgba(112, 112, 112, 0.46) 5px 4px; display: flex; align-items: center; justify-content: space-around; cursor: pointer;">
+            <p style="color: white;">Avaliação somativa</p>
+        </div>
+        <div id="botao_3"
+            style="width: 194px;height: 75px;background: #FFA800 0% 0% no-repeat padding-box;   border-radius: 10px; box-shadow: rgba(112, 112, 112, 0.46) 5px 4px; display: flex; align-items: center; justify-content: space-around; cursor: pointer;">
+            <p style="color: white;">Avaliação prospectiva</p>
+        </div>
+    </div>
+    <div>
+        <div class="jan" id="janela_1" style="cursor: pointer; display: none;">
+            <div
+                style="width: 743px;height: 226px;background: #E9A527 0% 0% no-repeat padding-box;   border-radius: 12px; display: flex; position: absolute;top: 160px;left: 80px;align-items: center;justify-content: space-evenly;">
+                <div
+                    style="width: 647px;display: flex;flex-direction: column;justify-content: space-between;align-items: center;">
+                    <p style="color: white;">AVALIAÇÃO FORMATIVA</p>
+                    <p style="color: white;width: 663px;">Realizada durante a implementação da intervenção com o
+                        objetivo de
+                        aprendizagem, ajuste de rota, correção de sua
+                        implementação, engajamento de atores, melhoria da intervenção etc. Geralmente, é uma
+                        avaliação
+                        realizada por agentes
+                        envolvidos na intervenção, comprometidos com o sucesso dela, conhecedores dos fatores
+                        críticos e
+                        potenciais, mas sem a
+                        possibilidade de uma visão mais distanciada. É, sobretudo, uma avaliação de processos,
+                        voltada
+                        para a análise da
+                        execução dos procedimentos e das etapas de implementação da intervenção, trazendo elementos
+                        para
+                        análise da eficiência
+                        com que os recursos são empregados.</p>
+                </div>
+                <p style="font-size: 13px;color: white;position: absolute;top: 0px;left: 730px;">x</p>
+            </div>
+        </div>
+        <div class="jan" id="janela_2" style="cursor: pointer; display: none;">
+            <div
+                style="width: 743px;height: 226px;background: #3F6B71 0% 0% no-repeat padding-box;   border-radius: 12px; display: flex; position: absolute;top: 160px;left: 80px;align-items: center;justify-content: space-evenly;">
+                <div
+                    style="width: 647px;display: flex;flex-direction: column;justify-content: space-between;align-items: center;">
+                    <p style="color: white;">AVALIAÇÃO SOMATIVA</p>
+                    <p style="color: white;width: 663px;">Realizada ao final da intervenção para responder se a
+                        intervenção é eficaz
+                        e se deve ter continuidade. Geralmente, é
+                        realizada por consultores independentes, menos comprometidos com a continuidade, mas menos
+                        conhecedores dos fatores
+                        críticos e potenciais. Tende a assumir as características de uma avaliação de resultados e
+                        impactos, isto é, tem foco
+                        nos efeitos da intervenção para o público-alvo e a sociedade, trazendo elementos para
+                        análise da
+                        eficácia (cumprimento
+                        dos objetivos em relação ao público-alvo) e efetividade social (efeitos mais abrangentes
+                        sobre a
+                        sociedade e a médio
+                        prazo).</p>
+                </div>
+                <p style="font-size: 13px;color: white;position: absolute;top: 0px;left: 730px;">x</p>
+            </div>
+        </div>
+        <div class="jan" id="janela_3" style="cursor: pointer; display: none;">
+            <div
+                style="width: 743px;height: 190px;background: #FFA800 0% 0% no-repeat padding-box;   border-radius: 12px; display: flex; position: absolute;top: 160px;left: 80px;align-items: center;justify-content: space-evenly;">
+                <div
+                    style="width: 647px;display: flex;flex-direction: column;justify-content: space-between;align-items: center;">
+                    <p style="color: white;">AVALIAÇÃO PROSPECTIVA</p>
+                    <p style="color: white;width: 663px;">Realizada antes da implementação da intervenção com o
+                        objetivo de analisar
+                        qual a possibilidade de sucesso da
+                        intervenção a partir do seu desenho lógico, isto é, a factibilidade de sucesso da
+                        intervenção.
+                    </p>
+                </div>
+                <p style="font-size: 13px;color: white;position: absolute;top: 0px;left: 730px;">x</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer style="width: 1008px;height: 19px;display: flex;background-color: #0D536A;align-items: center;">
+    <p style="margin-left: 15px;color: white;font-size: 11px;margin-top: 12px;">MONITORAMENTO E AVALIAÇÃO
+        PARTICIPATIVA
+    </p>
+</footer>
+<script>
+    $(() => {
+        let janelas = $(document).find('[id^=janela]').css('cursor', 'pointer').on("click", apagarJanelas);
+        apagarJanelas();
+        $(document).find('[id^=btn]').hide();
+        let botoes = $(document).find('[id^=botao]').map((index, botao) => {
+            $(botao).css('cursor', 'pointer');
+            $(botao).hover(() => {
+                $(document).find(`[id=btn_${index + 1}_2]`).show();
+            });
+            $(botao).mouseleave(() => {
+                $(document).find('[id^=btn]').hide();
+            });
+            $(botao).click(() => {
+                apagarJanelas();
+                $(janelas[index]).fadeIn();
+            })
+        })
+        function apagarJanelas() {
+            janelas.map((index, janela) => {
+                $(janela).hide();
+            })
+        }
+    })
+</script>

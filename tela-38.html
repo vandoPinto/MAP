@@ -1,0 +1,140 @@
+<style>
+    .jan {
+        z-index: 30;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .8);
+    }
+</style>
+<div style="height: 60px;width: 100%;">
+    <img style="height: 60px;position: absolute;right: 0px;" src="recursos/imgs/H1.png">
+    <p style="position: absolute;color: white;margin-left: 42px;margin-top: 26px;font-size: 12px;">TÓPICO<strong>
+            2</strong></p>
+    <p style="position: absolute;color: white;margin-left: 112px;margin-top: 26px;font-size: 11px;">
+        ESTRATÉGIAS DE AVALIAÇÃO NO CONTEXTO DA APS</p>
+</div>
+<div style="margin-top: 59px;margin-left: 84px;width: 818px;">
+    <p>Por fim, a quarta tipologia está relacionada à procedência dos avaliadores. </p>
+    <p style="margin-top: 40px;">Clique sobre os tipos para conhecê-los.</p>
+    <div
+        style="margin-left: 125px;margin-top: 63px;display: flex;justify-content: space-between;flex-wrap: wrap;width: 490px;height: 180px;align-content: space-between;">
+        <div id="botao_1"
+            style="width: 194px;height: 75px;background: #FFA800 0% 0% no-repeat padding-box;   border-radius: 10px; box-shadow: rgba(112, 112, 112, 0.46) 5px 4px; display: flex; align-items: center; justify-content: space-around; cursor: pointer;">
+            <p style="color: white;">Avaliação interna</p>
+        </div>
+        <div id="botao_2"
+            style="width: 194px;height: 75px;background: #108141 0% 0% no-repeat padding-box;   border-radius: 10px; box-shadow: rgba(112, 112, 112, 0.46) 5px 4px; display: flex; align-items: center; justify-content: space-around; cursor: pointer;">
+            <p style="color: white;">Avaliação externa</p>
+        </div>
+        <div id="botao_3"
+            style="width: 194px;height: 75px;background: #29696D 0% 0% no-repeat padding-box;   border-radius: 10px; box-shadow: rgba(112, 112, 112, 0.46) 5px 4px; display: flex; align-items: center; justify-content: space-around; cursor: pointer;">
+            <p style="color: white;">Avaliação mista</p>
+        </div>
+        <div id="botao_4"
+            style="width: 194px;height: 75px;background: #54BFCD 0% 0% no-repeat padding-box;   border-radius: 10px; box-shadow: rgba(112, 112, 112, 0.46) 5px 4px; display: flex; align-items: center; justify-content: space-around; cursor: pointer;">
+            <p style="color: white;width: 109px;text-align: center;">Avaliação participativa/<br>colaborativa</p>
+        </div>
+    </div>
+    <div>
+        <div class="jan" id="janela_1" style="cursor: pointer; display: none;">
+            <div
+                style="width: 743px;height: 226px;background: #E9A527 0% 0% no-repeat padding-box;   border-radius: 12px; display: flex; position: absolute;top: 150px;left: 80px;align-items: center;justify-content: space-evenly;">
+                <div
+                    style="width: 647px;display: flex;flex-direction: column;justify-content: space-between;align-items: center;">
+                    <p style="color: white;">AVALIAÇÃO INTERNA</p>
+                    <p style="color: white;">Realizada pela instituição que faz a gestão da intervenção. Pode
+                        apresentar menor objetividade e maior conflito de
+                        interesses, mas também uma menor resistência e um maior conhecimento das informações e do
+                        funcionamento da intervenção,
+                        justamente porque a equipe de avaliação conhece muito bem a intervenção. Como forma de
+                        minimizar os conflitos e melhorar
+                        a objetividade, é recomendado que a avaliação seja realizada por profissionais que não
+                        estejam diretamente vinculados à
+                        formulação e execução da intervenção avaliada (JANNUZZI, 2016).</p>
+                </div>
+                <p style="font-size: 13px;color: white;position: absolute;top: 0px;left: 730px;">x</p>
+            </div>
+        </div>
+        <div class="jan" id="janela_2" style="cursor: pointer; display: none;">
+            <div
+                style="width: 743px;height: 172px;background: #108141 0% 0% no-repeat padding-box;   border-radius: 12px; display: flex; position: absolute;top: 160px;left: 80px;align-items: center;justify-content: space-evenly;">
+                <div
+                    style="width: 647px;display: flex;flex-direction: column;justify-content: space-between;align-items: center;">
+                    <p style="color: white;">AVALIAÇÃO EXTERNA</p>
+                    <p style="color: white;">Realizada por avaliadores (especialistas) que não compõem a equipe da
+                        instituição responsável pela intervenção. Favorece
+                        uma maior objetividade e maiores imparcialidade e neutralidade. Permite comparar resultados
+                        de diferentes avaliações. No
+                        entanto, os avaliadores podem ter um domínio menor sobre o objeto da avaliação (JANNUZZI,
+                        2016).</p>
+                </div>
+                <p style="font-size: 13px;color: white;position: absolute;top: 0px;left: 730px;">x</p>
+            </div>
+        </div>
+        <div class="jan" id="janela_3" style="cursor: pointer; display: none;">
+            <div
+                style="width: 743px;height: 190px;background: #29696D 0% 0% no-repeat padding-box;   border-radius: 12px; display: flex; position: absolute;top: 150px;left: 80px;align-items: center;justify-content: space-evenly;">
+                <div
+                    style="width: 647px;display: flex;flex-direction: column;justify-content: space-between;align-items: center;">
+                    <p style="color: white;">AVALIAÇÃO MISTA</p>
+                    <p style="color: white;">Trata-se de uma combinação de avaliadores internos e externos. Pode
+                        aumentar a objetividade e o acesso ao conhecimento
+                        sobre a intervenção (JANNUZZI, 2016).</p>
+                </div>
+                <p style="font-size: 13px;color: white;position: absolute;top: 0px;left: 730px;">x</p>
+            </div>
+        </div>
+        <div class="jan" id="janela_4" style="cursor: pointer; display: none;">
+            <div
+                style="width: 743px;height: 187px;background: #54BFCD 0% 0% no-repeat padding-box;   border-radius: 12px; display: flex; position: absolute;top: 160px;left: 80px;align-items: center;justify-content: space-evenly;">
+                <div
+                    style="width: 647px;display: flex;flex-direction: column;justify-content: space-between;align-items: center;">
+                    <p style="color: white;">AVALIAÇÃO PARTICIPATIVA/COLABORATIVA</p>
+                    <p style="color: white;">Avaliação que demanda a participação dos atores da intervenção e da
+                        comunidade em todo o processo avaliativo
+                        (planejamento, execução e avaliação). Deve ser utilizada quando se desejam ampliar os atores
+                        e beneficiários para a
+                        concretização da intervenção e de seus objetivos. A incorporação de diferentes atores ou
+                        interessados na avaliação é
+                        muito importante para aumentar a relevância e a apropriação dos resultados, bem como a
+                        utilização dos achados da
+                        avaliação (JANNUZZI, 2016; CARDOSO <i>et al</i>., 2019).</p>
+                </div>
+                <p style="font-size: 13px;color: white;position: absolute;top: 0px;left: 730px;">x</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer style="width: 1008px;height: 19px;display: flex;background-color: #0D536A;align-items: center;">
+    <p style="margin-left: 15px;color: white;font-size: 11px;margin-top: 12px;">MONITORAMENTO E AVALIAÇÃO
+        PARTICIPATIVA
+    </p>
+</footer>
+<script>
+    $(() => {
+        let janelas = $(document).find('[id^=janela]').css('cursor', 'pointer').on("click", apagarJanelas);
+        apagarJanelas();
+        $(document).find('[id^=btn]').hide();
+        let botoes = $(document).find('[id^=botao]').map((index, botao) => {
+            $(botao).css('cursor', 'pointer');
+            $(botao).hover(() => {
+                $(document).find(`[id=btn_${index + 1}_2]`).show();
+            });
+            $(botao).mouseleave(() => {
+                $(document).find('[id^=btn]').hide();
+            });
+            $(botao).click(() => {
+                apagarJanelas();
+                $(janelas[index]).fadeIn();
+            })
+        })
+        function apagarJanelas() {
+            janelas.map((index, janela) => {
+                $(janela).hide();
+            })
+        }
+    })
+</script>

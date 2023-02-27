@@ -1,0 +1,123 @@
+<style>
+    .jan {
+        z-index: 30;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .8);
+    }
+</style>
+<div style="height: 60px;width: 100%;">
+    <img style="height: 60px;position: absolute;right: 0px;" src="recursos/imgs/H1.png">
+    <p style="position: absolute;color: white;margin-left: 42px;margin-top: 26px;font-size: 12px;">TÓPICO<strong>
+            1</strong></p>
+    <p style="position: absolute;color: white;margin-left: 112px;margin-top: 26px;font-size: 11px;width: 450px;">
+        MONITORAMENTO E AVALIAÇÃO NA GESTÃO EM SAÚDE</p>
+</div>
+<div style="display: flex;">
+    <div>
+        <div
+            style="margin-top: 18px;margin-left: 321px;width: 246px;height: 38px;background: #0D536A 0% 0% no-repeat padding-box;border: 1px solid #707070;display: flex;align-items: center;justify-content: center;">
+            <p style="font: normal normal bold 14px/18px Poppins;color: #FFFFFF;">Avaliação</p>
+        </div>
+        <p style="margin-top: 20px;margin-left: 153px;font: normal normal bold 14px/18px Poppins;color: #FFA800;">
+            Compreende:</p>
+        <div style="margin-left: 133px;width: 638px;">
+            <p>“[...] fazer um julgamento de valor sobre uma intervenção considerando um dispositivo capaz de fornecer
+                informações
+                cientificamente válidas e socialmente legítimas sobre essa intervenção ou sobre qualquer um de seus
+                componentes,
+                fazendo
+                com que os diferentes atores envolvidos, onde os campos de julgamento são às vezes diferentes, estejam
+                aptos à
+                tomada de
+                decisão sobre a intervenção para que possam construir, individualmente ou coletivamente, um julgamento
+                susceptível
+                de se
+                traduzir em ações” (CONTANDRIOPOULOS et al., 2009, n. p.); </p>
+            <p>responder a uma pergunta avaliativa; </p>
+            <p>
+                envolver julgamento de
+                mérito ou valor de uma intervenção, explicando a relação entre ela e os seus efeitos.
+            </p>
+            <div>
+                <img src="recursos/imgs/Icon_awesome-dot-circle-1.svg"
+                    style="position: absolute;left: 112px;width: 6px;top: 176px;">
+                <img src="recursos/imgs/Icon_awesome-dot-circle-1.svg"
+                    style="position: absolute;left: 112px;width: 6px;top: 308px;">
+                <img src="recursos/imgs/Icon_awesome-dot-circle-1.svg"
+                    style="position: absolute;left: 112px;width: 6px;top: 339px;">
+            </div>
+        </div>
+        <div id="botao_1"
+            style="margin-top: 15px;margin-left: 363px;width: 201px;height: 45px;background: #0D536A 0% 0% no-repeat padding-box;border-radius: 10px;display: flex;align-items: center;justify-content: center;">
+            <div style="display: flex;align-items: center;justify-content: center;">
+                <img src="recursos/imgs/img-cursor.svg">
+                <p style="font: normal normal bold 9px/8px Poppins;color: #FFFFFF;">CLIQUE AQUI PARA SABER MAIS</p>
+            </div>
+        </div>
+        <div id="janela_1" class="jan">
+            <div
+                style="width: 743px; height: 390px; background: 0% 0% no-repeat padding-box padding-box rgb(13, 83, 106); display: flex; align-items: center; justify-content: center;position: absolute;top: 67px;left: 70px;border-radius: 10px;">
+                <div style="width: 647px;">
+                    <p style="color: white;">Para praticar, vamos ver um exemplo de avaliação no SUS? Acesse o artigo <a
+                            href="https://www.scielo.br/j/sdeb/a/TP9zDT7QTn5vM7bTdbLd9tn/abstract/?lang=pt"
+                            target="_blank" style="color: #1592E6;">aqui</a>.
+                    </p>
+                    <p style="color: white;">Após a leitura do artigo, você terá
+                        notado que a avaliação explica o que foi observado e tece um juízo de valor sobre a intervenção
+                        que
+                        foi avaliada.
+                    </p>
+                    <p style="color: white;">Nesse
+                        sentido, é importante compreender que:
+                    </p>
+                    <p style="color: white;">- O monitoramento acompanha sistematicamente as atividades, os produtos e
+                        os
+                        resultados de uma intervenção, permitindo a reflexão sobre o desenvolvimento da intervenção em
+                        um
+                        determinado contexto e
+                        período.
+                    </p>
+                    <p style="color: white;">- A avaliação vai explicar aquilo que foi observado no monitoramento,
+                        emitindo
+                        um juízo de valor sobre a
+                        intervenção e permitindo a implementação de melhorias e a proposição de mudanças.</p>
+                </div>
+                <p style="font-size: 13px;color: white;position: absolute;top: 0px;left: 720px;">X</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer style="width: 1008px;height: 19px;display: flex;background-color: #0D536A;align-items: center;">
+    <p style="margin-left: 15px;color: white;font-size: 11px;margin-top: 12px;">MONITORAMENTO E AVALIAÇÃO
+        PARTICIPATIVA
+    </p>
+</footer>
+<script>
+    $(() => {
+        let janelas = $(document).find('[id^=janela]').css('cursor', 'pointer').on("click", apagarJanelas);
+        apagarJanelas();
+        $(document).find('[id^=btn]').hide();
+        let botoes = $(document).find('[id^=botao]').map((index, botao) => {
+            $(botao).css('cursor', 'pointer');
+            $(botao).hover(() => {
+                $(document).find(`[id=btn_${index + 1}_2]`).show();
+            });
+            $(botao).mouseleave(() => {
+                $(document).find('[id^=btn]').hide();
+            });
+            $(botao).click(() => {
+                apagarJanelas();
+                $(janelas[index]).fadeIn();
+            })
+        })
+        function apagarJanelas() {
+            janelas.map((index, janela) => {
+                $(janela).hide();
+            })
+        }
+    })
+</script>

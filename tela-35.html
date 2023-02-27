@@ -1,0 +1,118 @@
+<style>
+    .jan {
+        z-index: 30;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .8);
+    }
+</style>
+<div style="height: 60px;width: 100%;">
+    <img style="height: 60px;position: absolute;right: 0px;" src="recursos/imgs/H1.png">
+    <p style="position: absolute;color: white;margin-left: 42px;margin-top: 26px;font-size: 12px;">TÓPICO<strong>
+            2</strong></p>
+    <p style="position: absolute;color: white;margin-left: 112px;margin-top: 26px;font-size: 11px;">
+        ESTRATÉGIAS DE AVALIAÇÃO NO CONTEXTO DA APS</p>
+</div>
+<div style="margin-top: 80px;margin-left: 84px;width: 721px;">
+    <p>A terceira tipologia está relacionada aos aspectos da intervenção que são objeto da avaliação, isto é, o
+        componente da
+        intervenção que está em foco na avaliação (o foco da avaliação). </p>
+    <p style="margin-top: 20px;">Donabedian (1990), autor clássico da avaliação em
+        saúde, que estabeleceu a tríade estrutura-processo-resultado, destaca três tipos de avaliações segundo os
+        componentes da
+        intervenção que serão avaliados.</p>
+    <p style="margin-top: 30px;">Para conhecê-los, clique sobre cada um dos tipos.</p>
+    <div style="margin-top: 16px;display: flex;justify-content: space-between;">
+        <div id="botao_1"
+            style="width: 194px;height: 75px;background: #E9A527 0% 0% no-repeat padding-box;   border-radius: 10px; box-shadow: rgba(112, 112, 112, 0.46) 5px 4px; display: flex; align-items: center; justify-content: space-around; cursor: pointer;">
+            <p style="color: white;">Avaliação de estrutura</p>
+        </div>
+        <div id="botao_2"
+            style="width: 194px;height: 75px;background: #3F6B71 0% 0% no-repeat padding-box;   border-radius: 10px; box-shadow: rgba(112, 112, 112, 0.46) 5px 4px; display: flex; align-items: center; justify-content: space-around; cursor: pointer;">
+            <p style="color: white;">Avaliação de processo</p>
+        </div>
+        <div id="botao_3"
+            style="width: 194px;height: 75px;background: #FFA800 0% 0% no-repeat padding-box;   border-radius: 10px; box-shadow: rgba(112, 112, 112, 0.46) 5px 4px; display: flex; align-items: center; justify-content: space-around; cursor: pointer;">
+            <p style="color: white;width: 109px;text-align: center;">Avaliação de resultados e impactos</p>
+        </div>
+    </div>
+
+    <div>
+        <div class="jan" id="janela_1" style="cursor: pointer; display: none;">
+            <div
+                style="width: 743px;height: 153px;background: #E9A527 0% 0% no-repeat padding-box;   border-radius: 12px; display: flex; position: absolute;top: 180px;left: 80px;align-items: center;justify-content: space-evenly;">
+                <div
+                    style="width: 647px;display: flex;flex-direction: column;justify-content: space-between;align-items: center;">
+                    <p style="color: white;">AVALIAÇÃO DE ESTRUTURA</p>
+                    <p style="color: white;width: 663px;">Orientada para a análise da estrutura da intervenção, ou
+                        seja, compreende
+                        os insumos (recursos humanos, físicos e
+                        financeiros) necessários para a realização das atividades da intervenção, os arranjos
+                        organizacionais e os mecanismos
+                        para o financiamento da intervenção.</p>
+                </div>
+                <p style="font-size: 13px;color: white;position: absolute;top: 0px;left: 730px;">x</p>
+            </div>
+        </div>
+        <div class="jan" id="janela_2" style="cursor: pointer; display: none;">
+            <div
+                style="width: 743px;height: 124px;background: #3F6B71 0% 0% no-repeat padding-box;   border-radius: 12px; display: flex; position: absolute;top: 190px;left: 80px;align-items: center;justify-content: space-evenly;">
+                <div
+                    style="width: 647px;display: flex;flex-direction: column;justify-content: space-between;align-items: center;">
+                    <p style="color: white;">AVALIAÇÃO DE PROCESSO</p>
+                    <p style="color: white;width: 663px;">Analisa a operacionalização e execução das atividades da
+                        intervenção,
+                        contemplando a interação entre seus atores.
+                        Permite o conhecimento e a supervisão da intervenção.</p>
+                </div>
+                <p style="font-size: 13px;color: white;position: absolute;top: 0px;left: 730px;">x</p>
+            </div>
+        </div>
+        <div class="jan" id="janela_3" style="cursor: pointer; display: none;">
+            <div
+                style="width: 743px;height: 190px;background: #FFA800 0% 0% no-repeat padding-box;   border-radius: 12px; display: flex; position: absolute;top: 160px;left: 80px;align-items: center;justify-content: space-evenly;">
+                <div
+                    style="width: 647px;display: flex;flex-direction: column;justify-content: space-between;align-items: center;">
+                    <p style="color: white;">AVALIAÇÃO DE RESULTADOS E IMPACTO</p>
+                    <p style="color: white;width: 647px;">Analisa as mudanças ocorridas relativas à intervenção.
+                        Expressa o reflexo
+                        da intervenção na população.</p>
+                </div>
+                <p style="font-size: 13px;color: white;position: absolute;top: 0px;left: 730px;">x</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer style="width: 1008px;height: 19px;display: flex;background-color: #0D536A;align-items: center;">
+    <p style="margin-left: 15px;color: white;font-size: 11px;margin-top: 12px;">MONITORAMENTO E AVALIAÇÃO
+        PARTICIPATIVA
+    </p>
+</footer>
+<script>
+    $(() => {
+        let janelas = $(document).find('[id^=janela]').css('cursor', 'pointer').on("click", apagarJanelas);
+        apagarJanelas();
+        $(document).find('[id^=btn]').hide();
+        let botoes = $(document).find('[id^=botao]').map((index, botao) => {
+            $(botao).css('cursor', 'pointer');
+            $(botao).hover(() => {
+                $(document).find(`[id=btn_${index + 1}_2]`).show();
+            });
+            $(botao).mouseleave(() => {
+                $(document).find('[id^=btn]').hide();
+            });
+            $(botao).click(() => {
+                apagarJanelas();
+                $(janelas[index]).fadeIn();
+            })
+        })
+        function apagarJanelas() {
+            janelas.map((index, janela) => {
+                $(janela).hide();
+            })
+        }
+    })
+</script>
